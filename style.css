@@ -1,56 +1,34 @@
 body {
     background-color: #27232b;
-    background-image: linear-gradient(0deg, #27232b, #403948);
-    background-image: linear-gradient(0deg, #403948, #27232b);
     background-image: linear-gradient(0deg, #474257, #27232b);
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
     padding: 3rem;
-    /* background-image: linear-gradient(0deg, #3c364c, #27232b); */
-
+    text-align: center;
 }
 
 section {
-    padding: 3.5rem;
-    padding: 2rem;
     padding: 3rem;
 }
 
 .content {
-    width: 50%;
-    width: 60%;
-    width: 65%;
     width: 70%;
-    /* width: 75%; */
-    /* width: 80%; */
     margin: auto;
 }
 
 .skull {
-    width: 180px;
-    width: 160px;
     width: 140px;
     margin-top: 1.125rem;
     margin-bottom: .5rem;
-
-    /* margin-top: 1.5rem;
-    margin-bottom: 1rem; */
-
-    /* margin-top: 1.75rem; */
-    /* margin-bottom: 1.25rem; */
 }
 
 .learn-to-code {
     background-color: #201d23;
-    padding: 1px 8px 3px;
     border-radius: 6px;
-    color: #d4aaa5;
-    color: #dab8b4;
-    /* color: #d9b5ac; */
-    /* color: #d2b7b0; */
-    margin-right: 2px;
+    color: #dcb199;
     font-size: 1.1rem;
+    margin-right: 2px;
+    padding: 1px 8px 3px;
 }
 
 .course-desc {
@@ -60,25 +38,21 @@ section {
 }
 
 .course-desc .desc-item {
-    padding: 1.75rem;
-    padding: 2rem 1.75rem;
-    width: 50%;
-    /* border: 2px solid #8b879d; */
-    /* border: 3px solid rgba(139, 135, 157, 0.3); */
-    /* border: 4px solid #282733; */
-    border-radius: 32px;
-    background-color: #282733;
-    /* border-radius: 48px; */
-    margin: 0 1.25rem;
     display: flex;
     align-items: center;
+    background-color: #282733;
+    background-color: rgb(40 36 44 / 80%);
+    border-radius: 32px;
+    margin: 0 1.25rem;
+    padding: 2rem 1.75rem;
     text-align: left;
     transition: all .3s ease;
-    background-color: rgb(40 36 44 / 80%);
+    width: 50%;
 }
 
 .course-desc .desc-item:hover {
     background-color: #28242c;
+    background-color: #27232a;
 }
 
 .course-desc .desc-item:hover p {
@@ -86,10 +60,7 @@ section {
 }
 
 .course-desc .desc-item:hover i {
-    color: #8874b7;
     color: #9987c3;
-    /* color: #9581c5; */
-    /* color: #a18dce; */
 }
 
 .course-desc .desc-item p {
@@ -97,126 +68,61 @@ section {
 }
 
 .course-desc i {
-    font-size: 46px;
-    font-size: 42px;
+    color: #7b6aa2;
     font-size: 38px;
     margin-right: 1.5rem;
-    /* margin-bottom: 1rem; */
-    color: #c2a1e0;
-    color: #958ec4;
-    color: #8079b0;
-
-    color: #e29bee;
-    color: #ce9bee;
-    color: #8562a0;
-    color: #af73de;
-    color: #b75bff;
-    color: #915bff;
-    color: #7a62a0;
-    color: #8a6cb8;
-    color: #8d76c1;
-
-    color: #7b6aa2;
-    /* color: #746a9d; */
-
-    /* color: #8670b9; */
-    /* color: #915bff; */
     transition: all .3s ease;
-
+    /* margin-bottom: 1rem; */
 }
 
 h1 {
     font-size: 66px;
-    /* font-size: 64px; */
-    margin-bottom: .25rem;
+    font-weight: 800;
+    letter-spacing: 1px;
     margin-bottom: .5rem;
     margin-top: 0;
-    letter-spacing: 1px;
-    font-weight: 800;
 }
 
 h2 {
-    font-weight: 400;
-    margin-top: 0;
-    /* opacity: .5; */
-    color: #eedbce;
-    color: #c19eff;
-    color: #c9aaff;
-    color: #bca5e3;
-    color: #b1a0ce;
-    color: #a897c4;
     color: #ab9ac8;
-
-
-    /* color: #ebb691; */
-    /* color: #e4c1a9; */
-    letter-spacing: 1px;
+    font-weight: 400;
     letter-spacing: .75px;
+    margin-top: 0;
 }
 
 h3 {
-    font-weight: 500;
-    letter-spacing: .5px;
-    color: #a39fb6;
-    color: #aba7c0;
     color: #b8b4cc;
-    margin-bottom: 24px;
-    margin-bottom: 0px;
+    font-weight: 500;
     letter-spacing: 1px;
+    margin-bottom: 0px;
 }
 
 p {
-    color: #5f5c6c;
-    color: #797687;
-    color: #858293;
-    color: rgba(139, 135, 157, 0.9);
     color: #8b879d;
-    line-height: 1.5;
-    line-height: 1.75;
-    letter-spacing: .5px;
-    font-size: 15px;
-    margin-bottom: 20px;
     color: #9894ab;
+    font-size: 15px;
+    letter-spacing: .5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 button {
-    padding: 1rem 6rem;
-    padding: 1.2rem 5.5rem;
-    /* padding: 1rem 4rem; */
+    background-color: #ffc68a;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 12px 80px rgb(255 182 138 / 30%);
+    color: #3b3340;
     font-size: 24px;
     font-weight: 800;
-    border-radius: 50px;
-    border: none;
     margin-top: 1rem;
-    /* margin-top: 1.75rem; */
-    /* margin-top: 2rem; */
-    /* background-color: #ffcaa3; */
-    background-color: #fec69c;
-    background-color: #ffbf8e;
-    background-color: #ffb888;
-
-    background-color: #ffc288;
-    background-color: #ffc68a;
-    /* background-color: #ffb57c; */
-    /* background-color: #e59065; */
-    color: #3b3340;
-    box-shadow: 0px 24px 60px rgba(39, 35, 43, 0.6);
-    box-shadow: 0px 24px 60px rgba(44, 39, 50, 0.5);
-    box-shadow: 0px 12px 80px rgb(255 182 138 / 30%);
+    padding: 1.2rem 5.5rem;
     transition: all .2s ease;
 }
 
 button:hover {
-    background-color: #ffc27c;
-    background-color: #ffb57c;
-    background-color: #ffbb7c;
-    background-color: #ffb784;
-    background-color: #e283ff;
     background-color: #e696ff;
-    color: #27232b;
-    box-shadow: 0px 24px 100px #27232b;
-    box-shadow: 0px 36px 100px #1d1b20;
     box-shadow: 0px 36px 100px #884bb6;
+    color: #27232b;
 }
 
 button:hover .btn-icon {
@@ -234,44 +140,17 @@ button:hover .btn-icon {
 }
 
 .icons i {
-    font-size: 24px;
-    font-size: 16px;
-    color: #5e586f;
-    color: #696379;
-    transition: all .4s ease;
-    cursor: pointer;
-    margin: 0 .375rem;
-
-    margin: 0 .25rem;
-    background-color: black;
-    border-radius: 12px;
-    padding: 10px;
-    background-color: #544e64;
-    background-color: #4b455a;
-    background-color: rgb(42 39 45 / 100%); 
-    color: #88819b;
-    color: #797389;
-    
     background-color: rgb(32, 30, 34); 
-    /* color: #706a81; */
+    border-radius: 12px;
+    color: #797389;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 .25rem;
+    padding: 10px;
+    transition: all .4s ease;
 }
 
 .icons i:hover {
-    color: #777185;
-    color: #817c8f;
-    color: #858293;
-
     background-color: #575068;
-    color: #b0a8c3;
-    background-color: #575068;
-    color: #bab3cc;
-    /* background-color: #60596f; */
-    color: #c0bacf;
     color: #d5cfe2;
-    /* color: #c8c2d9; */
-
-    /* box-shadow: 0 0 30px #aa7fca; */
-    /* box-shadow: 0 0 30px #bb65fb; */
-    /* box-shadow: 0 0 30px #884bb6; */
-    /* box-shadow: 0 0 30px #d57fff; */
 }
