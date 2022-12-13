@@ -7,24 +7,118 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding: 3rem;
-    height: 100vh;
+}
+
+section {
+    padding: 3.5rem;
+    padding: 2rem;
+    padding: 3rem;
 }
 
 .content {
     width: 50%;
+    width: 60%;
+    width: 65%;
+    width: 70%;
+    /* width: 75%; */
+    /* width: 80%; */
     margin: auto;
 }
 
 .skull {
     width: 180px;
-    width: 170px;
-    margin-top: 1rem;
-    margin-bottom: .75rem;
+    width: 160px;
+    width: 140px;
+    margin-top: 1.125rem;
+    margin-bottom: .5rem;
+
+    /* margin-top: 1.5rem;
+    margin-bottom: 1rem; */
+
+    /* margin-top: 1.75rem; */
+    /* margin-bottom: 1.25rem; */
+}
+
+.course-desc {
+    display: flex;
+    margin: 3rem 0 2.5rem;
+    margin: 2rem 0;
+}
+
+.course-desc .desc-item {
+    padding: 1.75rem;
+    padding: 2rem 1.75rem;
+    width: 50%;
+    /* border: 2px solid #8b879d; */
+    /* border: 3px solid rgba(139, 135, 157, 0.3); */
+    /* border: 4px solid #282733; */
+    border-radius: 32px;
+    background-color: #282733;
+    /* border-radius: 48px; */
+    margin: 0 1.25rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: all .3s ease;
+    background-color: rgb(40 36 44 / 80%);
+}
+
+.course-desc .desc-item:hover {
+    background-color: #28242c;
+}
+
+.course-desc .desc-item:hover p {
+    /* color: #a7a4ba; */
+}
+
+.course-desc .desc-item:hover i {
+    color: #8874b7;
+    color: #9987c3;
+    /* color: #9581c5; */
+    /* color: #a18dce; */
+}
+
+.course-desc .desc-item p {
+    margin: 0;
+}
+
+.course-desc i {
+    font-size: 46px;
+    font-size: 42px;
+    font-size: 38px;
+    margin-right: 1.5rem;
+    /* margin-bottom: 1rem; */
+    color: #c2a1e0;
+    color: #958ec4;
+    color: #8079b0;
+
+    color: #e29bee;
+    color: #ce9bee;
+    color: #8562a0;
+    color: #af73de;
+    color: #b75bff;
+    color: #915bff;
+    color: #7a62a0;
+    color: #8a6cb8;
+    color: #8d76c1;
+
+    color: #7b6aa2;
+    /* color: #746a9d; */
+
+    /* color: #8670b9; */
+    /* color: #915bff; */
+    transition: all .3s ease;
+
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 66px;
+    /* font-size: 64px; */
     margin-bottom: .25rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-weight: 800;
 }
 
 h2 {
@@ -35,6 +129,13 @@ h2 {
     color: #c19eff;
     color: #c9aaff;
     color: #bca5e3;
+    color: #b1a0ce;
+    color: #a897c4;
+    color: #ab9ac8;
+
+
+    /* color: #ebb691; */
+    /* color: #e4c1a9; */
     letter-spacing: 1px;
     letter-spacing: .75px;
 }
@@ -46,6 +147,7 @@ h3 {
     color: #aba7c0;
     color: #b8b4cc;
     margin-bottom: 24px;
+    margin-bottom: 0px;
     letter-spacing: 1px;
 }
 
@@ -56,9 +158,11 @@ p {
     color: rgba(139, 135, 157, 0.9);
     color: #8b879d;
     line-height: 1.5;
+    line-height: 1.75;
     letter-spacing: .5px;
     font-size: 15px;
     margin-bottom: 20px;
+    color: #9894ab;
 }
 
 button {
@@ -66,11 +170,12 @@ button {
     padding: 1.2rem 5.5rem;
     /* padding: 1rem 4rem; */
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     border-radius: 50px;
     border: none;
-    margin-top: 1.5rem;
-    margin-top: 1.75rem;
+    margin-top: 1rem;
+    /* margin-top: 1.75rem; */
+    /* margin-top: 2rem; */
     /* background-color: #ffcaa3; */
     background-color: #fec69c;
     background-color: #ffbf8e;
@@ -83,6 +188,7 @@ button {
     color: #3b3340;
     box-shadow: 0px 24px 60px rgba(39, 35, 43, 0.6);
     box-shadow: 0px 24px 60px rgba(44, 39, 50, 0.5);
+    box-shadow: 0px 12px 80px rgb(255 182 138 / 30%);
     transition: all .2s ease;
 }
 
@@ -96,6 +202,16 @@ button:hover {
     color: #27232b;
     box-shadow: 0px 24px 100px #27232b;
     box-shadow: 0px 36px 100px #1d1b20;
+    box-shadow: 0px 36px 100px #884bb6;
+}
+
+button:hover .btn-icon {
+    margin-left: 12px;
+}
+
+.btn-icon {
+    margin-left: 4px;
+    transition: all .3s ease;
 }
 
 .icons {
@@ -137,5 +253,11 @@ button:hover {
     color: #bab3cc;
     /* background-color: #60596f; */
     color: #c0bacf;
+    color: #d5cfe2;
     /* color: #c8c2d9; */
+
+    /* box-shadow: 0 0 30px #aa7fca; */
+    /* box-shadow: 0 0 30px #bb65fb; */
+    /* box-shadow: 0 0 30px #884bb6; */
+    /* box-shadow: 0 0 30px #d57fff; */
 }
