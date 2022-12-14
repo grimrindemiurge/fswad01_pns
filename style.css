@@ -3,16 +3,24 @@
 }
 
 body {
-    background-color: #27232b;
     background-image: linear-gradient(0deg, #474257, #27232b);
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 3rem;
     text-align: center;
+    margin: 0;
+}
+
+.main {
+    background-color: #27232b;
+    background-image: linear-gradient(0deg, #474257, #27232b);
+    padding: 3rem 3rem 7rem;
+    padding: 3rem 0 7rem;
 }
 
 section {
-    padding: 3rem;
+    padding: 3rem 0;
+    width: 88%;
+    margin: auto;
 }
 
 .content {
@@ -45,9 +53,11 @@ h1 {
 
 h2 {
     color: #ab9ac8;
+    font-size: 1.5em;
     font-weight: 400;
     letter-spacing: .75px;
     margin-top: 0;
+    margin-bottom: 2.5rem;
 }
 
 h3 {
@@ -56,6 +66,8 @@ h3 {
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 0px;
+    font-size: 1.17em;
+    margin-top: 1em;
 }
 
 p {
@@ -72,11 +84,14 @@ hr {
     border: none;
     border-top: 6px dotted #2b2730;
     border-top: 6px dotted #232027;
+    border-top: 6px dotted #221e24;
     width: 18%;
     margin: 4rem auto;
+    margin: 4rem auto 3.25rem;
+    opacity: 1;
 }
 
-
+/* 🦄 --------------- General List --------------- */
 .list {
     display: flex;
     margin: 2rem 0;
@@ -89,7 +104,7 @@ hr {
     background-color: rgb(40 36 44 / 80%);
     border-radius: 32px;
     margin: 0 1.25rem;
-    padding: 2rem 1.75rem;
+    padding: 2rem;
     text-align: left;
     transition: all .3s ease;
     width: 50%;
@@ -98,6 +113,7 @@ hr {
 .list .list-item:hover {
     background-color: #28242c;
     background-color: #27232a;
+    background-color: #221e24;
 }
 
 .list .list-item:hover p {
@@ -106,6 +122,7 @@ hr {
 
 .list .list-item:hover i {
     color: #9987c3;
+    color: #a391cc;
 }
 
 .list .list-item p {
@@ -120,14 +137,17 @@ hr {
     /* margin-bottom: 1rem; */
 }
 
+/* 🐱 --------------- Course List --------------- */
 .list.course {
     display: block;
     margin-top: 3rem; 
+    margin-bottom: 2.5rem;
 }
 
 .list.course  .list-item {
     width: 100%;
     margin: 1.5rem 0;
+    margin: 0 0 2rem;
 }
 
 .list.course  .list-item.top-pick {
@@ -141,6 +161,7 @@ hr {
 
 .list.course  .list-item.top-pick h3 {
     margin-bottom: .5rem;
+    margin-top: 1.5rem;
 }
 
 .list.course .course-listing {
@@ -148,9 +169,10 @@ hr {
 }
 
 .course-listing img {
-    width: 40%;
+    width: 50%;
     border-radius: 16px;
     margin-right: 1.75rem;
+    margin-right: 2rem;
 }
 
 .list.course .course-listing  h3 {
@@ -158,8 +180,76 @@ hr {
     margin-bottom: .75rem;
 }
 
+/* 🦊 --------------- FAQ --------------- */
+#faq {
+    padding-bottom: 0;
+}
+
+#faq .content {
+    width: 54%;
+}
+
+.list.faq {
+    display: block;
+    margin-bottom: 0;
+}
+
+.list.faq .list-item {
+    background-color: rgb(84 80 101 / 50%);
+    background-color: rgb(84 80 101 / 65%);
+    margin: 0;
+    /* margin-bottom: 1.75rem; */
+    padding: 2rem 2.5rem;
+    /* padding: 1.75rem 2.5rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all .4s ease;
+}
+
+.list.faq .list-item:hover {
+    background-color: rgb(84 80 101 / 80%);
+    background-color: rgb(84 80 101 / 65%);
+    background-color: rgb(84 80 101 / 100%);
+
+}
+
+.list.faq .list-item:last-child {
+    margin-bottom: 0;
+}
+
+.list.faq .collapse-handler {
+    text-decoration: none;
+    margin-bottom: 1.875rem;
+    display: block;
+}
+
+.list.faq .collapse-handler:last-child {
+    margin-bottom: 0;
+}
+
+.list-item-desc .collapse.show {
+    padding-top: 1rem;
+}
+
+.list-item-desc h3 {
+    margin-top: 0;
+}
+
+.list.faq i {
+    color: #9894ab;
+    color: #9c99aa;
+    font-size: 16px;
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
 
 
+/* 🐨 --------------- Buttons --------------- */
+.cta-group a {
+    text-decoration: none;
+}
 button {
     background-color: #ffc68a;
     border: none;
@@ -172,6 +262,10 @@ button {
     padding: 1.2rem 5.5rem;
     padding: 1.2rem 4rem;
     transition: all .3s ease;
+
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .5px;
 }
 
 button:hover {
@@ -203,8 +297,11 @@ button.btn-outline:hover .btn-icon {
 
 .btn-icon {
     margin-left: 4px;
+    margin-left: 6px;
 }
 
+
+/* 🦁 --------------- Social icons --------------- */
 .social-icons {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -224,4 +321,116 @@ button.btn-outline:hover .btn-icon {
 .social-icons i:hover {
     background-color: #575068;
     color: #d5cfe2;
+}
+
+
+/* 🐸 --------------- contact-us --------------- */
+.contact-us-wrap {
+    background-color: #27232b;
+    padding: 3rem 0; 
+}
+
+#contact-us .content {
+    width: 54%;
+    width: 70%;
+    width: 67%;
+    margin: auto;
+    /* border: 3px solid #555167; */
+    border-radius: 36px;
+    /* background-color: #555167; */
+    /* background-color: rgba(85, 81, 103, 0.8); */
+    /* background-color: rgb(40 36 44 / 40%); */
+}
+
+#contact-us .contact {
+    display: flex;
+    opacity: .8;
+}
+
+#contact-us .contact .contact-detail {
+    margin: 0 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contact-us .contact .contact-detail:first-child {
+    margin-left: 0;
+}
+
+#contact-us .contact .contact-detail:last-child {
+    margin-right: 0;
+}
+
+#contact-us .contact .contact-detail i {
+    font-size: 18px;
+    /* margin-bottom: 8px; */
+    /* color: #ffc68a; */
+    color: #9894ab;
+    margin-right: 1rem;
+    transition: all .2s ease;
+}
+
+.developer p {
+    color: #ffc68a;
+    color: #c8c4da;
+    font-weight: 500;
+}
+
+.contact-detail-data {
+    display: flex;
+    align-items: center;
+}
+
+#contact-us p {
+    font-size: 16px;
+    margin: 4px 0;
+    margin: 0;
+    /* color: #9894ab; */
+}
+
+.contact-detail-data:hover a, #contact-us .contact .contact-detail .contact-detail-data:hover i {
+    color: #ffc68a;
+}
+
+.contact-detail-data a {
+    color: #ffc68a;
+    /* color: #8b879d; */
+    color: #9894ab;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.contact-detail-data a:hover {
+    /* color: #e696ff; */
+    /* color: #ffc68a; */
+}
+
+.contact-detail-data a:hover i {
+    /* color: #ffc68a; */
+}
+
+#contact-us .contact  .contact-detail.developer {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact-us p.job-title {
+    color: #9894ab;
+    opacity: .6;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+
+
+.course-catalog {
+    padding: 5.5rem 3rem 6rem;
+    padding: 5.5rem 0 6rem;
+}
+
+.course-catalog .content {
+    width: 60%;
+    /* width: 56%; */
 }
