@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-    color: #ab9ac8;
+    color: #ad9fc5;
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: .75px;
@@ -60,8 +60,21 @@ h2 {
     margin-top: 0;
 }
 
+.section-title {
+    color: #9183a4;
+    font-size: 1.625em;
+    font-weight: 700;
+    letter-spacing: .75px;
+    margin-bottom: 2.25rem;
+    margin-top: 0;
+}
+
+#contact-us .section-title {
+    margin-bottom: 2rem;
+}
+
 h3 {
-    color: #c8c4da;
+    color: rgb(200 196 218 / 85%);
     font-size: 1.17em;
     font-weight: 500;
     letter-spacing: 1px;
@@ -106,7 +119,7 @@ hr {
 }
 
 .list .list-item:hover {
-    /* background-color: #221e24; */
+    background-color: #221e24;
 }
 
 .list .list-item:hover .list-item-icon  {
@@ -147,7 +160,7 @@ hr {
 .list.course  .list-item.top-pick {
     display: block;
     margin: 0 0 3.5rem;
-    background-color: #1c1a1f;
+    background-color: #1c191f;
 }
 
 .list.course  .list-item.top-pick img {
@@ -162,7 +175,7 @@ hr {
 
 .list.course .course-listing {
     align-items: flex-start;
-    background-color: rgba(37, 34, 40, 0.7);
+    background-color: rgba(29, 26, 33, 0.6);
 }
 
 .course-listing img {
@@ -204,6 +217,7 @@ hr {
     align-items: flex-start;
     justify-content: space-between;
     background-color: rgb(84 80 101 / 65%);
+    /* box-shadow: 0 10px 30px rgb(39 35 43 / 20%); */
     margin: 0 0 1.875rem;
     padding: 2rem 2.5rem 1rem;
     transition: all .4s ease;
@@ -379,7 +393,7 @@ hr {
 /* 🌈🐸 **-------------@ Contact Us @-------------** */
 .contact-us-wrap {
     background-color: #27232b;
-    padding: 3rem 0; 
+    padding: 3.5rem 0 3rem;
 }
 
 #contact-us .content {
